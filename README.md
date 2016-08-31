@@ -56,9 +56,9 @@ Our guide is based off the excellent [Airbnb JavaScript Style Guide](https://git
   $(window).on("scroll", doSomething);
 
   // good
-  import $ form "jquery";
+  import $ from "jquery";
 
-  $(wdinow).on("scroll", doSomething);
+  $(window).on("scroll", doSomething);
   ```
 
 #### Comparison Operators & Equality
@@ -115,7 +115,7 @@ Our guide is based off the excellent [Airbnb JavaScript Style Guide](https://git
   // good
   render(firstName) {
     return (
-      <div id='i-am'>
+      <div id="i-am">
         {`I'm ${firstName}!`}
       </div>
     );
@@ -132,7 +132,8 @@ Our guide is based off the excellent [Airbnb JavaScript Style Guide](https://git
     'name': 'Han Solo'
   };
   user['best-friend'] = 'Chewie';
-
+  
+  // good
   const user {
     'name': 'Han Solo'
   };
@@ -170,6 +171,7 @@ Our guide is based off the excellent [Airbnb JavaScript Style Guide](https://git
   ```
 
   ```js
+  // good
   'use strict';
 
   function someFunction() {
